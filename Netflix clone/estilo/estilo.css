@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root{ /*Cores principais*/
+    --preto: black;
+    --vermelho: #d33535ce; ;
+}
+ /*Geral*/
+body{
+    background-color: var(--preto);
+    color: white;
+}
+
+
+*{ /* Configuração global (*) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /*Header*/
+h1#titulo{
+    color: var(--vermelho);
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+header > .container{ /*Alinhamento do header*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Espaço entre elementos*/
+    background-color: #41404079;
+    box-shadow: 0px 1px 4px #504f4fbb ;
+}
+form#cabecalho > a{
+    text-decoration: none;
+    color: #AAA;
+    font-size: 18px;
+    margin-right: 10px;
+}
+form#cabecalho > a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+ /*Main*/
+
+ .principal {
+    font-size: 16px;
+    background: linear-gradient(#00000080,#00000080 100%), url('../img/capa-house.jpg');
+    height: 400px;
+    background-size: cover; /*Cover- a img ira tomar toda area de cobertura do background*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+.principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.principal .descricao {
+    margin-bottom: 40px;
+    width: 60%;
+    padding-left: 10px;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    padding: 15px 30px;
+    margin: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+
+.botao > a{
+    text-decoration: none;
+    color: white;
+}
+
+.botao:hover{
+    background-color: white;
+    font-size: 16px;
+}
+
+.botao:hover > a{
+    color: black;
+}
+
+.box-filmes {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+article#filmes{
+    margin-top: 5px;
+}
+
+/*Footer*/
+ 
+footer {
+    background-color: #41404079;
+    box-shadow: 0px 1px 4px #504f4fbb ;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer:hover{
+    color: var(--vermelho);
+    font-size: 20px;
+}
